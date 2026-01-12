@@ -9,8 +9,7 @@ gunicorn==23.0.0
 inflection==0.5.1
 packaging==25.0
 Pillow==10.1.0
-psycopg==3.3.2
-psycopg-binary==3.3.2
+psycopg[binary]==3.3.2
 PyJWT==2.10.1
 python-decouple==3.8
 pytz==2025.2

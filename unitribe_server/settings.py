@@ -12,7 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-your-secret-key-here')
 
 DEBUG = config('DEBUG', default=True, cast=bool)
-
+STATIC_URL = '/static/'
+# This forces Django to use absolute URLs for admin static files
+ADMIN_MEDIA_PREFIX = '/static/admin/'
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
